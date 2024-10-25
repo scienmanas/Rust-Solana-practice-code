@@ -1,0 +1,44 @@
+1. solana config get
+2. solana address
+3. solana-keygen new
+4. solana config set -u d
+5. solana airdrop <amount>
+6. solana balance
+7. solana-keygen new -o <output file>
+8. solana-keygen pubkey <file> - to know public key of other keypair
+9. solana transfer <amount> <to public key>
+10. solana transfer --allow-unfunded-recipient <to public key> <amount>
+11. solana balance <address>
+12. solana logs
+13. solana block > block.txt
+14. spl-token --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb create-token --enable-metadata
+15. spl-token initialize-metadata 5GrpG1PgMjXQwyKm3q4HkYv6a4oWDu3gkFoQgFKzdJLg <YOUR_TOKEN_NAME> <YOUR_TOKEN_SYMBOL> <YOUR_TOKEN_URI>
+16. spl-token initialize-metadata 5GrpG1PgMjXQwyKm3q4HkYv6a4oWDu3gkFoQgFKzdJLg Tesla-nikol TN https://bafkreihwqhounu3cdwgvk2gc2dqcinpntlccbo3xcy4xuerd24yndldl5q.ipfs.nftstorage.link/ --update-authority 2eJGPvgJUQseYRGwjYASSuT6R7NpQwZvBNXMyYPWMJt7
+
+Turbine: Solana block propagation protocol, which breaks data into smaller chunks for efficient transmission.
+Proof of History: A clock before consensus, that timestamps each transaction.
+Tower BFT: A PoH-based Finality Gadget for the Solana blockchain.
+Gulf Stream: A block propagation protocol that propagates votes through the network before the block.
+Sealevel: A transaction processing unit for validation of the PoH and execution of the transactions.
+Proof-of-Stake (PoS) is used for securing the network and selecting validators.
+Cloudbreak uses memory map files
+
+
+--------------------------------------------------
+
+Crate
+- The smallest compilation unit in Rust
+main.rs (executable program) - binary 
+cargo new my_project --lib
+cargo new my_project --bin
+- Can be either binary or library
+- Crate can contain multiple modules that organize code.
+
+Package
+- conatains one or more crates and always has a Cargo.toml file that describes how to build those crates, or package dependencies and metadata.
+
+Modules
+- Used to organize code within a crate
+- let you split your code into multiple files or logical separated units within a file.
+- defined with mod keyword
+
